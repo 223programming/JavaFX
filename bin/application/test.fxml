@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="366.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.testController">
+   <center>
+      <ImageView id="imageDisplay" fx:id="image_frame" fitHeight="251.0" fitWidth="329.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="50.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="start_btn" fx:id="start_btn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#startCamera" text="Start Camera">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="stop_btn" fx:id="stop_btn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#stopCamera" text="Stop Camera">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="close_btn" fx:id="close_btn" mnemonicParsing="false" onAction="#closeProgram" text="Close Program">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
